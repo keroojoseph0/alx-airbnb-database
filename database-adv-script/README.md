@@ -35,3 +35,7 @@ Write a query to find all **properties** where the **average rating** is greater
 A **non-correlated subquery** runs independently of the main query.  
 It executes first, and the result is then used by the outer query.
 
+# 2. Apply Aggregations and Window Functions
+
+## 🎯 Objective
+Use SQL aggregation and window functions to analyze data effectively.
