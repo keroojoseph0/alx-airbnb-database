@@ -19,3 +19,19 @@ After completing this project, you will be able to:
 - Write SQL queries to join multiple tables.
 - Retrieve and interpret results involving matched and unmatched data.
 
+# 1. Practice Subqueries
+
+## 🧠 Objective
+The goal of this task is to understand and practice **subqueries** in SQL — both **correlated** and **non-correlated** subqueries.
+
+---
+
+## 📝 Instructions
+
+### 1. Non-Correlated Subquery
+Write a query to find all **properties** where the **average rating** is greater than **4.0** using a **subquery**.
+
+#### 💡 Explanation
+A **non-correlated subquery** runs independently of the main query.  
+It executes first, and the result is then used by the outer query.
+
