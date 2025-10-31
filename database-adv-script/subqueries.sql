@@ -18,7 +18,7 @@ WHERE avg_rating > 4.0;
 
 SELECT user_id 
 FROM (
-	SELECT booking_id, user_id, count(user_id) AS num_of_booking
+	SELECT booking_id, user_id, COUNT(user_id) AS num_of_booking
     FROM bookings
     GROUP BY booking_id
     ) AS booking_count
