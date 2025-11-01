@@ -10,10 +10,10 @@ SELECT
   u.first_name,
   p.name AS property_name,
   pay.amount
-FROM bookings b
-INNER JOIN users u ON b.user_id = u.user_id
-INNER JOIN properties p ON b.property_id = p.property_id
-INNER JOIN payments pay ON b.booking_id = pay.booking_id;
+FROM bookings b, users u, properties p, payments pay
+WHERE b.user_id = u.user_id
+  AND b.property_id = p.property_id
+  AND b.booking_id = pay.booking_id;
 
 
 EXPLAIN 
@@ -23,11 +23,10 @@ SELECT
   u.first_name,
   p.name AS property_name,
   pay.amount
-FROM bookings b
-INNER JOIN users u ON b.user_id = u.user_id
-INNER JOIN properties p ON b.property_id = p.property_id
-INNER JOIN payments pay ON b.booking_id = pay.booking_id;
-
+FROM bookings b, users u, properties p, payments pay
+WHERE b.user_id = u.user_id
+  AND b.property_id = p.property_id
+  AND b.booking_id = pay.booking_id;
 
 EXPLAIN ANALYZE 
 SELECT 
@@ -36,10 +35,10 @@ SELECT
   u.first_name,
   p.name AS property_name,
   pay.amount
-FROM bookings b
-INNER JOIN users u ON b.user_id = u.user_id
-INNER JOIN properties p ON b.property_id = p.property_id
-INNER JOIN payments pay ON b.booking_id = pay.booking_id;
+FROM bookings b, users u, properties p, payments pay
+WHERE b.user_id = u.user_id
+  AND b.property_id = p.property_id
+  AND b.booking_id = pay.booking_id;
 
 
 
